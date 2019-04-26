@@ -23,6 +23,69 @@
     		    <div id="container">
     			    <div id="content" role="main">
                         <!-- Your code should go here -->
+                        <h1>Order Form</h1>
+                        <form action="" class="general-info" name="General Indo">
+                            <fieldset>
+                                <legend>General Info</legend>
+                                <label for="email-form">Email</label>
+                                <input type="email" id="email-form" placeholder="your@email.com" required>
+                                <br>
+                                <label for="login-form">Login</label>
+                                <input type="text" id="login-form" placeholder="Login" required>
+                                <br>
+                                <label for="password-form">Password</label>
+                                <input type="password" id="password-form" placeholder="Password" required>
+                            </fieldset>
+                        
+                            <fieldset>
+                                <legend>User Info</legend>
+                                <label for="first-name">First Name</label>
+                                <input type="text" id="first-name" placeholder="John" required>
+                                <br>
+                                <label for="second-name">Second Name</label>
+                                <input type="text" id="second-name" placeholder="Doe" required>
+                                <br>
+                                <!--Можна окремо прописувати <label for=""> окремо від <input>, щоб зберегти порядок, але не хочу-->
+                                <label for="gender">Gender</label>
+                                <label class="option"><input type="radio" name="gender" class="radio-gender" checked>Male</label>
+                                <label class="option"><input type="radio" name="gender" class="radio-gender">Female</label>
+                                <br>
+                                <label for="age">Age</label>
+                                <input type="number" id="age" min="16" placeholder="32" required>
+                                <br>
+                                <label for="about-me">About Me</label>
+                                <textarea name="" id="about-me" rows="5"></textarea>
+                            </fieldset>
+                            
+                            <fieldset>
+                                <legend>User Info</legend>
+
+                                <label for="product">Product</label>
+                                <select name="" id="product" required>
+                                    <option value="">IPhone</option>
+                                    <option value="">Android</option>
+                                    <option value="">Windows Phone</option>
+                                </select>
+                                <br>
+                                <label for="front-color">Front Color</label>
+                                <!--Можна юзати конструкцію span-input, щоб чітко дотримуватися макету, але ну нафіг-->
+                                <label class="option"><input type="radio" name="front-color" checked>Black</label>
+                                <label class="option"><input type="radio" name="front-color">Pink</label>
+                                <label class="option"><input type="radio" name="front-color">Gold</label>
+                                <br>
+                                <label for="backside-color">Back-side color</label>
+                                <input type="color" id="backside-color" required>
+                                <br>
+                                <label for="amount">Amount</label>
+                                <input type="number" id="amount" min="1" placeholder="5" required>
+                                <br>
+                                <label for="delivery-date">Delivery Date</label>
+                                <input type="date" id="delivery-date" required>
+                            </fieldset>
+                            <input type="reset" class="reset-button">
+                            <input type="submit" class="submit-button"> 
+                        </form>
+                        
                     </div>
                 </div>
             </div>
